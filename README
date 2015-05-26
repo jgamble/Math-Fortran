@@ -1,15 +1,46 @@
-Perl Module Math::Fortran - 0.01
+	Math-Fortran, version 0.02, 15 May 2015
 
-     Copyright (c) 1995 John A.R. Williams. All rights reserved.
-     This program is free software; you can redistribute it and/or
-     modify it under the same terms as Perl itself.
+Implementations of Fortran's sign() and log10() functions.
 
-To install, unzip and untar the archive. In the directory created type
+INSTALLATION
 
-perl Makefile.pl
-make install
+To install this module, run the following commands:
 
-Documentation is in the module file and will be added onto
-perllocal.pod as usual.
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
 
-I can be contacted at <Email: J.A.R.Williams@aston.ac.uk>
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Math::Fortran
+
+You can also look for information at:
+
+    RT, CPAN's request tracker (report bugs here)
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Math-Fortran
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Math-Fortran
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Math-Fortran
+
+    Search CPAN
+        http://search.cpan.org/dist/Math-Fortran/
+
+
+LICENSE AND COPYRIGHT
+
+Copyright (C) 1995 J. A. R. Williams
+This module is currently maintained by  John M. Gamble
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See L<http://dev.perl.org/licenses/> for more information.
+

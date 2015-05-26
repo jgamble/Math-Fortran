@@ -15,15 +15,17 @@
 This module provides and exports some mathematical functions which are
 built in in Fortran but not in Perl. Currently there are only 2 included.
 
-=item B<log10> log to the base of 10
-=item B<sign> with 1 parameter, +1 if $y>=0, -1 otherwise, with 2 parameters +abs($x) if $y>=0, -abs($x) otherwise.
+=over
 
-=head1 HISTORY
+=item B<log10()>
 
-$Log: Fortran.pm,v $
-Revision 1.1  1995/12/26 09:43:01  willijar
-Initial revision
+Log to the base of 10
 
+=item B<sign()>
+
+With 1 parameter, +1 if $y >= 0, -1 otherwise. With 2 parameters +abs($x) if $y >= 0, -abs($x) otherwise.
+
+=back
 
 =head1 BUGS
 
@@ -31,7 +33,9 @@ I welcome other entries for this module and bug reports.
 
 =head1 AUTHOR
 
-John A.R. Williams <J.A.R.Williams@aston.ac.uk>
+John A.R. Williams B<J.A.R.Williams@aston.ac.uk>
+
+John M. Gamble B<jgamble@cpan.org> (current maintainer)
 
 =cut
 
@@ -40,6 +44,8 @@ package Math::Fortran;
 @ISA=qw(Exporter);
 @EXPORT_OK=qw(sign log10);
 use strict;
+
+our $VERSION = 0.02;
 
 sub log10 { log($_[0])/log(10); }
 
