@@ -1,5 +1,10 @@
 Revision history for Math-Fortran
 
+0.03
+	7 Aug 2015
+	- Tests added.
+	- Added some current Perl usage like "use warnings". Set the minimum
+	  perl to 5.8.3. Fixed documentation to use =head3 format.
 0.02
 	15 May 2015
 	- Get package up to more-or-less current standards using
