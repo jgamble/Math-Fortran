@@ -1,4 +1,4 @@
-	Math-Fortran, version 0.02, 15 May 2015
+	Math-Fortran, version 0.03, 7 August 2015
 
 Implementations of Fortran's sign() and log10() functions.
 
