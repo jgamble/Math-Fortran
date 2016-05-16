@@ -2,7 +2,7 @@
 use 5.008003;
 use strict;
 use warnings;
-use Test::More tests => 6;
+use Test::Simple tests => 6;
 
 use Math::Fortran qw(log10);
 
@@ -10,9 +10,9 @@ sub fltcmp
 {
 	my($x, $y) = @_;
 
-	return -1 if ($x + 5e-7 < $y);
-	return 1 if ($x - 5e-7 > $y);
-	return 0;
+	return 0 if (abs($x - $y) < 5e-7);
+	return -1 if ($x < $y);
+	return 1;
 }
 
 

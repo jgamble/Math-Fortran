@@ -2,7 +2,7 @@
 use 5.008003;
 use strict;
 use warnings;
-use Test::More tests => 6;
+use Test::Simple tests => 6;
 
 use Math::Fortran qw(sign);
 

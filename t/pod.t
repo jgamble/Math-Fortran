@@ -1,8 +1,8 @@
 #!perl -T
-use 5.006;
+use 5.008003;
 use strict;
 use warnings FATAL => 'all';
-use Test::More;
+use Test::Simple;
 
 # Ensure a recent version of Test::Pod
 my $min_tp = 1.22;

@@ -1,8 +1,8 @@
 #!perl -T
-use 5.006;
+use 5.008003;
 use strict;
 use warnings FATAL => 'all';
-use Test::More;
+use Test::Simple;
 
 unless ( $ENV{RELEASE_TESTING} ) {
     plan( skip_all => "Author tests not required for installation" );
