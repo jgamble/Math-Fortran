@@ -30,6 +30,11 @@ my $builder = Module::Build->new(
 	dynamic_config => 0,
 	release_status      => 'stable',
 	add_to_cleanup     => [ 'Math-Fortran-*' ],
+	meta_merge => {
+		resources => {
+			repository => 'git://github.com/jgamble/Math-Fortran.git',
+		},
+	},
 );
 
 $builder->create_build_script();
